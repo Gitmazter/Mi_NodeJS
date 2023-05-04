@@ -1,34 +1,25 @@
 // Common JS module
 
 class Block {
-
-    #timestamp = Date.now()
-    #data = ``
-    #hash = '1x1x1x1x1x1x'
-    #lastHash = '2z2z2z2z2z2z'
-
-    constructor(timestamp, data, hash, lastHash){
-        this.#timestamp = timestamp;
-        this.#data = data;
-        this.#hash = hash;
-        this.#lastHash = lastHash;
+    constructor({ timestamp, data, hash, lastHash}){
+        this.timestamp = timestamp
+        this.data = data;
+        this.hash = hash;
+        this.lastHash = lastHash;
     }
 
-    get transaction() {
-        return this.#data;
-    }
+    // get transaction() {
+    //     return this.data;
+    // }
 
-    get currentHash() {
-        return this.#hash
-    }
+    // get currentHash() {
+    //     return this.hash
+    // }
 
-    get prevHash () {
-        return this.#lastHash
-    }
+    // get prevHash () {
+    //     return this.lastHash
+    // }
 
-    get time () {
-        return this.#timestamp
-    }
 
 }
 
