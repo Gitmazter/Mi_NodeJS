@@ -1,0 +1,6 @@
+// npm i @types/jest
+{
+    "typeAcquisition": {
+        "include": ["jest"]
+    }
+}
