@@ -1,7 +1,27 @@
 const Movie = require('./Movie')
 
 // Arrange
-const movie = new Movie();
+const id = 1;
+const title = 'The Batman'
+const releaseYear = '420'
+const description = 'yes'
+const movie = new Movie(1, title, releaseYear, description);
+
+it('should have an id', () => {
+    expect(movie.movieId).toEqual(id);
+})
+
+it('should have a title', () => {
+    expect(movie.title).toEqual(title)
+});
+
+it('should have a release year', () => {
+    expect(movie.releaseYear).toEqual(releaseYear)
+});
+
+it('should have a description', () => {
+    expect(movie.description).toEqual(description)
+});
 
 // Act
 it('should return an instance of Movie', () => {
