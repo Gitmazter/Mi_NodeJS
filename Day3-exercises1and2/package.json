@@ -1,0 +1,19 @@
+{
+  "name": "day3-exercises1and2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^29.5.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0"
+  }
+}
